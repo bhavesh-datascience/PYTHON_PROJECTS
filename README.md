@@ -1,5 +1,5 @@
 
-#!# PYHTON PROJECTS
+## PYHTON PROJECTS
 
 
 1. **Understanding Python Syntax**: Learning the syntax of Python, especially if you're new to the language, can be challenging. You might have faced difficulties understanding concepts like indentation, data types, and control flow. To overcome this, you likely spent time practicing with simple programs, referencing documentation, and seeking help from online tutorials or communities like Stack Overflow. 📚💻🔍
