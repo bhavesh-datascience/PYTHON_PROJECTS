@@ -1,0 +1,30 @@
+class Price:
+    def __init__(self, price: int, people_no: int):
+        self.price = price
+        self.people_no = people_no
+
+    def __str__(self):
+        return f"Price: {self.price}, Number of people: {self.people_no}"
+
+    def spliter(self):
+        return self.price / self.people_no
+
+if __name__ == "__main__":
+    while True:
+        try:
+            amount = int(input("Enter amount: "))
+            no_of = int(input("Enter number of people: "))
+            enter_gst = int(input("Enter GST (%): "))
+
+            total_with_gst = amount + (amount * enter_gst / 100)
+            obj = Price(total_with_gst, no_of)
+
+            print(obj)
+            print("Amount per person:", obj.spliter())
+
+            break  # ✅ Success — exit the loop
+
+        except ValueError:
+            print("❌ Please enter numbers only. Try again.\n")
+        except ZeroDivisionError:
+            print("❌ Number of people cannot be zero. Try again.\n")
